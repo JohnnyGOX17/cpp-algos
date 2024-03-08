@@ -18,7 +18,7 @@ enable_testing()
 
 add_executable(
   CppAlgos
-  linked_list_cycle_141.cpp
+  hello_test.cpp
 )
 target_link_libraries(
   CppAlgos
