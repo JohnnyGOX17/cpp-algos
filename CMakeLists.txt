@@ -19,7 +19,7 @@ enable_testing()
 
 add_executable(
   CppAlgos
-  hello_test.cpp
+  ./leetcode/hello_test.cpp
 )
 target_link_libraries(
   CppAlgos
