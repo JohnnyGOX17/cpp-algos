@@ -5,10 +5,9 @@ Algorithms, Data Structures and LeetCode solutions in C++
 ## Building
 
 1. `$ cmake -S . -B build`
-2. `$ cd build`
-3. `$ make -j$(nproc)`
-4. Run tests with `$ ctest`
-5. Create `compile_commands.json` for [use with `clangd` linter](https://clangd.llvm.org/installation.html#project-setup) with `$ cmake .. -DCMAKE_EXPORT_COMPILE_COMMANDS=1`
+2. `$ cmake --build build -j$(nproc)`
+3. Run tests with `$ cd build/ && ctest` or `$ ./build/CppAlgos`
+4. Create `compile_commands.json` for [use with `clangd` linter](https://clangd.llvm.org/installation.html#project-setup) with `$ cmake .. -DCMAKE_EXPORT_COMPILE_COMMANDS=1`
 
 ## References
 

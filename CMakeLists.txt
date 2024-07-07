@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 3.11)
-project(CppAlgos VERSION 0.1)
+project(CppAlgos 
+  LANGUAGES CXX
+  VERSION 0.1
+  DESCRIPTION "C++ algorithms and data structures"
+)
 
 # GoogleTest requires at least C++14
 set(CMAKE_CXX_STANDARD 14)
@@ -25,6 +29,16 @@ target_link_libraries(
   CppAlgos
   GTest::gtest_main
 )
+
+if ( CMAKE_CXX_COMPILER_ID MATCHES "Clang|AppleClang|GNU" )
+  target_compile_options(CppAlgos PRIVATE -Wall -Wextra -Wunreachable-code -Wpedantic -Werror)
+endif()
+if ( CMAKE_CXX_COMPILER_ID MATCHES "Clang" )
+  target_compile_options(CppAlgos PRIVATE -Wweak-vtables -Wexit-time-destructors -Wmissing-noreturn)
+endif()
+if ( CMAKE_CXX_COMPILER_ID MATCHES "MSVC" )
+  target_compile_options(CppAlgos PRIVATE /W4 /w44265 /w44061 /w44062)
+endif()
 
 include(GoogleTest)
 gtest_discover_tests(CppAlgos)

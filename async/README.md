@@ -12,10 +12,11 @@
 
 ### Library Books
 
+* C++ High Performance - Second Edition
+  - Chp 2 - A const reference
+* C++ Concurrency in Action, Second Edition
 * Learn C++ by Example
 * A Tour of C++, 3rd Edition
-* C++ High Performance - Second Edition
-* C++ Concurrency in Action, Second Edition
 * Learn C++ by Example
 * Effective Modern C++
 * Designing Data-Intensive Applications
@@ -31,4 +32,4 @@
 - [ ] [disruptor-rs](https://github.com/nicholassm/disruptor-rs)
 - [ ] [hashbrown](https://docs.rs/hashbrown/latest/hashbrown/)
 - [ ] [tracing](https://docs.rs/tracing/latest/tracing/)
-  + [tracing_subscriber](https://docs.rs/tracing-subscriber/latest/tracing_subscriber/)
+  + For C++, see [spdlog](https://github.com/gabime/spdlog)
